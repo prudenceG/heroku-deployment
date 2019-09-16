@@ -1,19 +1,15 @@
 'use strict';
-const items;
-if (process.env.NODE_ENV !== 'production') {
-  items = [
-    {
-      id: 'HAMMER-1234',
-      name: 'Hammer',
-    },
-    {
-      id: 'NAILS-5678',
-      name: 'Nails',
-    },
-  ];
-} else {
-  items = [];
-}
+
+const items = [
+  {
+    id: 'TRUCKS-1234',
+    name: 'Trucks',
+  },
+  {
+    id: 'CARS-5678',
+    name: 'Cars',
+  },
+];
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
