@@ -8,8 +8,6 @@ const app = express();
 const PATH_TO_WEB_APP_BUILD = 'web-app/build';
 app.use(express.static(path.join(__dirname, PATH_TO_WEB_APP_BUILD)));
 
-
-
 app.use(cors())
 
 app

@@ -7,6 +7,9 @@ class App extends Component {
   async componentDidMount() {
     const response = await fetch('/api/items');
     const { items } = await response.json();
+    if (process.env.NODE_ENV === 'production') {
+      console.log('production');
+    }
     console.log('items', items);
     this.setState({ items });
   }
