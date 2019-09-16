@@ -10,6 +10,9 @@ class App extends Component {
     if (process.env.NODE_ENV === 'production') {
       console.log('production');
     }
+    if (process.env.NODE_ENV === 'development') {
+      console.log('development');
+    }
     console.log('items', items);
     this.setState({ items });
   }
