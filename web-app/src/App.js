@@ -7,7 +7,6 @@ class App extends Component {
   async componentDidMount() {
     const response = await fetch('/api/items');
     const { items } = await response.json();
-    console.log('items', items);
     this.setState({ items });
   }
 
